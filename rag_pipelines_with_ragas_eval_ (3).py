@@ -68,7 +68,7 @@ llm.invoke("what is AI")
 
 """#Hugging Face API key"""
 
-HF_TOKEN = "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"
+HF_TOKEN = ""
 
 """#Download the BITEXT Dataset"""
 
@@ -127,7 +127,7 @@ retriever = vectorstore.as_retriever(search_kwargs={"k": 5})
 """#Open API key for Testing"""
 
 import os
-os.environ['OPENAI_API_KEY'] = "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"
+os.environ['OPENAI_API_KEY'] = "your OPENAPI key"
 
 openapi_key = os.environ.get('OPENAI_API_KEY')
 
