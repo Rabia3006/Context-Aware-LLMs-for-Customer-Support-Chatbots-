@@ -1,0 +1,13 @@
+langchain
+langchain-core
+langchain-community
+chromadb
+ollama
+datasets
+scikit-learn
+pandas
+numpy
+matplotlib
+panel
+ragas
+python-dotenv
