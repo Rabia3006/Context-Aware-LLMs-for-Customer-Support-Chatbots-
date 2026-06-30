@@ -1,0 +1,16 @@
+HF_TOKEN = ""
+
+#step 2 load the dataset
+dataset = load_dataset(
+    "bitext/Bitext-customer-support-llm-chatbot-training-dataset",
+    split="train",
+    token=HF_TOKEN
+)
+#convert dataset to datafraame
+df = dataset.to_pandas()
+
+# Split dataset into training & testing data
+train_df, test_df = train_test_split(df, test_size=0.2, stratify=df['intent'])
+
+# Convert back to Hugging Face dataset
+train_dataset = Dataset.from_pandas(train_df)
